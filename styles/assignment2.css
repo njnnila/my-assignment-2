@@ -206,24 +206,18 @@ section{
     width: 336px;
   }
   .banner-section .banner-description{
-    font-size: 14px;
-    
-    margin-top: 18px;
-    margin-bottom: 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    align-items: center;
+    text-align: center;
   }
   .banner-section .banner-title{
-  
+    align-items: center;
+    text-align: center;
    
-   margin: 0 1rem;
   }
   .banner-section .btn-1{
    padding: 6px 24px;
    border-style: none;
-   margin-top: 18px;
-   margin-left: 130px;
-   margin-left: 130px;
+   margin-left: 150px;
   }
 }
 
