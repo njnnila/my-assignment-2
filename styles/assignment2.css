@@ -5,3 +5,256 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/*shared styles*/
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+a:hover{
+  color: white;
+}
+/*header styles*/
+header{
+  position: relative;
+  padding: 0 2rem;
+  margin-top: 20px;
+}
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+}
+.navbar .toggle-btn{
+  color: black;
+  font-size: 1,5rem;
+  cursor: pointer;
+  display: none;
+}
+.ctn-btn{
+  padding: 0.5rem 4rem;
+  color: white;
+  border-radius: 12px;
+  background-color: rgba(254, 163, 1, 1);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+  border: none;
+  outline: none;
+}
+.navbar .logos{
+  display: flex;
+  align-items: center;
+}
+.ctn-btn:hover{
+  scale: 1.05;
+  color: white;
+}
+.ctn-btn:active{
+  scale: 0.95;
+}
+/*dropdown menu*/
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  background-color: darkslategray;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 0;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-menu .ctn-btn{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding: 10px 60px;;
+  justify-content: center;
+  border-color: chartreuses;
+  border-style: dashed;
+
+}
+.dropdown-menu.open{
+  height: 240px;
+}
+
+
+
+
+
+
+/*responsive design header*/
+@media(max-width:992px) {
+  .navbar .links,
+  .navbar .ctn-btn {
+    display: none;
+  }
+  .navbar .toggle-btn{
+    display: block;
+  }
+  .dropdown-menu{
+  display: block;
+}
+}
+@media (max-width:576px) {
+  .dropdown-menu{
+    left: 2rem;
+    width: unset;
+  }
+  header{
+    border: 1px solid rgba(254, 163, 1, 1);
+  }
+}
+/*section style*/
+.banner-content{
+   width: 100%;
+   max-width: 40rem; 
+   
+}
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+ 
+}
+section{
+  position: relative;
+  padding: 0 2rem;
+  margin-top: 20px;
+  
+}
+.banner-image{
+  width: 100%;
+  height: 100%;
+  max-width: 29rem;
+  height: 100%;
+  max-height: 36rem;
+  
+}
+.btn-1{
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 10px 47px;
+  margin-top: 24px;
+}
+.banner-description{
+  margin-top: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.banner-title{
+  font-size: 56px;
+  font-weight: 700;
+}
+.banner-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/*responsive design section*/
+@media(max-width:850px){
+  .banner-section .banner-title{
+    font-size: 32px;
+  }
+  
+}
+
+@media(max-width:740px){
+  .banner-section {
+    flex-direction: column-reverse;
+  }
+  .banner-section .banner-image{
+    width: 336px;
+  }
+  .banner-section .banner-description{
+    font-size: 14px;
+    
+    margin-top: 18px;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .banner-section .banner-title{
+  
+   
+   margin: 0 1rem;
+  }
+  .banner-section .btn-1{
+   padding: 6px 24px;
+   border-style: none;
+   margin-top: 18px;
+   margin-left: 130px;
+   margin-left: 130px;
+  }
+}
+
+
+
+/*section style*/
+/*.banner-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12rem;
+  margin: 50px 0;
+  align-items: center;
+  
+}
+.btn-1{
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 10px 47px;
+  margin-top: 24px;
+  border-style: none;
+}
+.banner-title{
+  font-size: 56px;
+  font-weight: 700;
+}
+.banner-description{
+  margin-top: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+}*/
+

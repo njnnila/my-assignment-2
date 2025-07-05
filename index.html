@@ -2,20 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,sinitial-scale=1.0">
     <title>Second assisgnment</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79e45178d5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/assignment2.css">
+    
+    
 </head>
-<body class="quicksand-font">
-    <header>
+  <body class="quicksand-font">
+  <header>
        <nav class="navbar">
-        <h3 class="brand">School</h3>
+           <div class="logos">
+             <img class="pic" src="B11-A2-Kids-School/assets/logo.png" alt="">
+             <h1 class="logo">School</h1>
+           </div>
+            
+          <ul class="links">
+            <li><a href="home" style="color: rgba(254, 163, 1, 1); font-weight: 700; font-size: 1rem;">Home</a></li>
+            <li><a href="about" style="color: rgba(1, 172, 253, 1); font-weight: 500; font-size: 1rem;">About</a></li>
+            <li><a href="facilities" style="color: rgba(5, 212, 223, 1); font-weight: 500; font-size: 1rem;">Facilities</a></li>
+            <li><a href="admission" style="color: rgba(93, 88, 239, 1);font-weight: 500; font-size: 1rem;">Admission</a></li>
+          </ul>
+      <li><a href="#" class="ctn-btn">Contact</a></li>
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+         <div class="dropdown-menu">
+            <li><a href="home" style="color: rgba(254, 163, 1, 1);">Home</a></li>
+            <li><a href="about" style="color: rgba(1, 172, 253, 1);">About</a></li>
+            <li><a href="facilities" style="color: rgba(5, 212, 223, 1);">Facilities</a></li>
+            <li><a href="admission" style="color: rgba(93, 88, 239, 1);">Admission</a></li>
+            <li><a href="#" class="ctn-btn">Contact</a></li>
+         </div>
        </nav>
-    </header>
+
+       </header>
+       <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function ( ) {
+          dropDownMenu.classList.toggle('open')
+          const isopen = dropDownMenu.classList.contains('open')
+
+          toggleBtn.classList = isopen
+        ? "fa-solid fa-xmark" 
+         :  'fa-solid fa-bars'
+        
+       
+        
+        }
+
+       </script>
+       <section class="banner-section">
+         <div class="banner-content">
+            <h1 class="banner-title"><span style="color: rgba(254, 163, 1, 1);">Empowering</span> <br>
+           students from small <br>age <span style="color: rgba(1, 172, 253, 1);">towards vision</span></h1>
+           <p class="banner-description">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
+           <button class="btn-1">Enroll Now</button>
+           </div>
+            <div class="banner-image">
+              <img class="banner-image" src="B11-A2-Kids-School/assets/hero-kids.png" alt="">
+            </div>
+           
+           
+       
+       </section>
     <main>
+        
 
     </main>
     <footer>
@@ -23,3 +81,5 @@
     </footer>
 </body>
 </html>
+
+
